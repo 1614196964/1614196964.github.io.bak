@@ -4,15 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Anaconda环境管理, LaLaLand">
-    <meta name="description" content="1. conda环境管理1.1 创建一个新环境创建一个新的环境 比如叫pytorch
+    <meta name="keywords" content="SpringBoot中MyBatis，MyBatisPlus操作, LaLaLand">
+    <meta name="description" content="springboot 整合mybatis
+导入对应的starter
 
-打开Anaconda Prompt
-默认在base环境下
-用conda create --name pytorch创建
-
-
-1.2 激活新环境创建完成之">
+1234567891011&amp;lt;dependency&amp;gt;    &amp;lt;groupId&amp;gt;org.mybatis.spring.boot&amp;lt;/groupId">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Anaconda环境管理 | LaLaLand</title>
+    <title>SpringBoot中MyBatis，MyBatisPlus操作 | LaLaLand</title>
     <link rel="icon" type="image/png" href="/1614196964.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/1614196964.github.io/libs/awesome/css/all.min.css">
@@ -316,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/1614196964.github.io/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/1614196964.github.io/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Anaconda环境管理</h1>
+                    <h1 class="description center-align post-title">SpringBoot中MyBatis，MyBatisPlus操作</h1>
                 </div>
             </div>
         </div>
@@ -437,8 +433,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/1614196964.github.io/tags/anaconda-Anaconda-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/">
-                                <span class="chip bg-color">anaconda Anaconda 环境管理</span>
+                            <a href="/1614196964.github.io/tags/SpringBoot-MyBatis-MyBatisPlue/">
+                                <span class="chip bg-color">SpringBoot MyBatis MyBatisPlue</span>
                             </a>
                         
                     </div>
@@ -453,7 +449,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-11-18
+                    2022-06-15
                 </div>
                 
 
@@ -474,33 +470,73 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-conda环境管理"><a href="#1-conda环境管理" class="headerlink" title="1. conda环境管理"></a>1. conda环境管理</h1><h2 id="1-1-创建一个新环境"><a href="#1-1-创建一个新环境" class="headerlink" title="1.1 创建一个新环境"></a>1.1 创建一个新环境</h2><p>创建一个新的环境 比如叫pytorch</p>
-<ol>
-<li>打开Anaconda Prompt</li>
-<li>默认在base环境下</li>
-<li>用<code>conda create --name pytorch</code>创建</li>
+                <h2 id="springboot-整合mybatis"><a href="#springboot-整合mybatis" class="headerlink" title="springboot 整合mybatis"></a>springboot 整合mybatis</h2><ol>
+<li>导入对应的starter</li>
 </ol>
-<p><img src="../images/create-env.png" alt="create-env"></p>
-<h2 id="1-2-激活新环境"><a href="#1-2-激活新环境" class="headerlink" title="1.2 激活新环境"></a>1.2 激活新环境</h2><p>创建完成之后用<code>activate pytorch</code> 激活环境</p>
-<p><img src="../images/activate-env.png" alt="activate-env"></p>
-<h2 id="1-3-退出新环境"><a href="#1-3-退出新环境" class="headerlink" title="1.3 退出新环境"></a>1.3 退出新环境</h2><p>如果想返回默认的环境 用<code>conda deactivate </code>就是activate 加一个de前缀</p>
-<p>退出当前环境</p>
-<p><img src="../images/deactivate-env.png" alt="deactivate-env"></p>
-<h2 id="1-4-删除一个已有环境"><a href="#1-4-删除一个已有环境" class="headerlink" title="1.4 删除一个已有环境"></a>1.4 删除一个已有环境</h2><p>用<code>conda remove --name pytorch -all</code> 移除刚才新创建的环境</p>
-<p><img src="../images/remove-env.png" alt="remove-env"></p>
-<h2 id="1-5-查看已有的环境"><a href="#1-5-查看已有的环境" class="headerlink" title="1.5 查看已有的环境"></a>1.5 查看已有的环境</h2><p>用户安装的环境都被放在`~/anaconda/envs 目录下</p>
-<p><img src="/images/info-env.png" alt="info-env"></p>
-<h1 id="2-conda的包管理"><a href="#2-conda的包管理" class="headerlink" title="2. conda的包管理"></a>2. conda的包管理</h1><h2 id="2-1-查看该环境下已安装的包"><a href="#2-1-查看该环境下已安装的包" class="headerlink" title="2.1 查看该环境下已安装的包"></a>2.1 查看该环境下已安装的包</h2><p><code>conda list</code> 查看</p>
-<p><img src="/images/conda-list.png" alt="conda-list"></p>
-<h2 id="2-2-查看某个指定环境下的包"><a href="#2-2-查看某个指定环境下的包" class="headerlink" title="2.2 查看某个指定环境下的包"></a>2.2 查看某个指定环境下的包</h2><p><code>conda list -n bertqa</code>  </p>
-<p>bertqa是我之前的一个环境</p>
-<h2 id="2-3-安装包"><a href="#2-3-安装包" class="headerlink" title="2.3 安装包"></a>2.3 安装包</h2><p><code>conda install pandas</code>  在本环境下安装</p>
-<p><code>conda install -n bertqa pandas </code> 在bertqa环境下安装</p>
-<h2 id="2-4-更新包"><a href="#2-4-更新包" class="headerlink" title="2.4 更新包"></a>2.4 更新包</h2><p><code>conda update pandas</code></p>
-<p><code>conda update -n bertqa pandas</code></p>
-<h2 id="2-5-删除包"><a href="#2-5-删除包" class="headerlink" title="2.5 删除包"></a>2.5 删除包</h2><p><code>conda remove -n bertqa pands</code></p>
-<h1 id="3-conda管理"><a href="#3-conda管理" class="headerlink" title="3. conda管理"></a>3. conda管理</h1><h2 id="3-1-更新conda"><a href="#3-1-更新conda" class="headerlink" title="3.1 更新conda"></a>3.1 更新conda</h2><p><code>conda update conda</code></p>
-<h2 id="3-2-更新anaconda"><a href="#3-2-更新anaconda" class="headerlink" title="3.2 更新anaconda"></a>3.2 更新anaconda</h2><p><code>conda update anaconda</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis.spring.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.29<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>连接数据库，首先把配置文件改成yml 后缀application.yml，注意这里配置url 的时候可能需要配置时区，然后3306/ 后面是数据库的名字</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/demo?useSSL=false&amp;serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">    <span class="attr">password:</span> <span class="number">123456</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>创建一个实体类，在com.example 下面创建一个包，老师叫pojo 黑马叫domain，这里注意你数据字段，必须跟数据库的属性名字一毛一样，IDEA连接数据库好像能直接生成？没试过。 注意：我这里没有写Setter 和Getter 方法，但是我写了一个@Data 注解，这个注解就把那些个方法全包括了，但是需要导入lombok 坐标</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.example.domain;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.12<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>创建数据库操作接口，在example 下创建一个Mapper 包，黑马叫Dao 包，然后写一个接口，进行数据库操作。注意这里的@mapper 是为了让SpringBoot 扫描到。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> List&lt;User&gt; <span class="title">getAll</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>在resources 目录下创建一个目录，目录下创建一个xml 文件，这里我创建的mybatis 目录下一个mapper.xml 文件，写了一个查询全部的语句。最后需要在application.yml 中配置一个包扫描路径。其中namespace 是操作数据库接口的全限定类名；id 就是方法名字，需要统一；resultType 是返回结果类型的全限定类名</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">mapper</span> <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span> <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span> &gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.example.Dao.UserDao&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;getAll&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.example.domain.User&quot;</span>&gt;</span></span><br><span class="line">        select * from user</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mybatis/*.xml</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>单表查询，使用MybatisPlus，多表查询，使用Mybatis</p>
+<h2 id="MyBatisPlus-单表查询"><a href="#MyBatisPlus-单表查询" class="headerlink" title="MyBatisPlus 单表查询"></a>MyBatisPlus 单表查询</h2><ol>
+<li>首先导入MyBatisPlus（简称MP） 的坐标。注意：在导入MP 整合boot 坐标之后，就不要再导入MyBatis 的坐标了，会报错</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.4.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>配置数据库，写UserDao 接口，写User 实体类</p>
+</li>
+<li><p>UserDao 需要继承<code>BaseMapper&lt;User&gt;</code> 其中这个泛型是那个实体类</p>
+</li>
+<li><p>在测试类中，注入一个UserDao 的对象，就可以调用方法进行CRUD 了</p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> UserDao userDao;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testUpdate</span><span class="params">()</span></span>&#123;</span><br><span class="line">    User user = <span class="keyword">new</span> User();</span><br><span class="line">    user.setId(<span class="number">2</span>);</span><br><span class="line">    user.setName(<span class="string">&quot;sudaqiang&quot;</span>);</span><br><span class="line">    userDao.updateById(user);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">testInsert</span><span class="params">()</span></span>&#123;</span><br><span class="line">    User user = <span class="keyword">new</span> User();</span><br><span class="line">    user.setId(<span class="number">4</span>);</span><br><span class="line">    user.setAge(<span class="number">12</span>);</span><br><span class="line">    user.setName(<span class="string">&quot;minisudong&quot;</span>);</span><br><span class="line">    user.setEmail(<span class="string">&quot;misiduong.@qq.com&quot;</span>);</span><br><span class="line">    userDao.insert(user);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">contextLoads</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List&lt;User&gt; users = userDao.selectList(<span class="keyword">null</span>);</span><br><span class="line">    System.out.println(users);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="精简输出信息"><a href="#精简输出信息" class="headerlink" title="精简输出信息"></a>精简输出信息</h2><ol>
+<li>首先在application.yml 中配置，这分别关闭springboot 和mybatis-plus 的logo</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">main:</span></span><br><span class="line">      <span class="attr">banner-mode:</span> <span class="string">off</span></span><br><span class="line">      </span><br><span class="line"><span class="attr">mybatis-plus:</span></span><br><span class="line">  <span class="attr">global-config:</span></span><br><span class="line">    <span class="attr">banner:</span> <span class="string">off</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在resources 目录下创建logback.xml 文件</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
 
                 
             </div>
@@ -527,7 +563,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://1614196964.github.io/1614196964.github.io/2021/11/18/Anaconda%E7%AE%A1%E7%90%86%E7%8E%AF%E5%A2%83/">https://1614196964.github.io/1614196964.github.io/2021/11/18/Anaconda%E7%AE%A1%E7%90%86%E7%8E%AF%E5%A2%83/</a>
+                    <a href="https://1614196964.github.io/1614196964.github.io/2022/06/15/%E8%AF%BE%E8%AE%BE/">https://1614196964.github.io/1614196964.github.io/2022/06/15/%E8%AF%BE%E8%AE%BE/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -565,8 +601,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/1614196964.github.io/tags/anaconda-Anaconda-%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/">
-                                    <span class="chip bg-color">anaconda Anaconda 环境管理</span>
+                                <a href="/1614196964.github.io/tags/SpringBoot-MyBatis-MyBatisPlue/">
+                                    <span class="chip bg-color">SpringBoot MyBatis MyBatisPlue</span>
                                 </a>
                             
                         </div>
@@ -738,17 +774,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/1614196964.github.io/2021/11/28/hexo%E6%8C%87%E4%BB%A4/">
+                <a href="/1614196964.github.io/2022/06/15/%E8%AF%BE%E8%AE%BE/">
                     <div class="card-image">
                         
                         
-                        <img src="/1614196964.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="Hexo 指令">
+                        <img src="/1614196964.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="SpringBoot中MyBatis，MyBatisPlus操作">
                         
-                        <span class="card-title">Hexo 指令</span>
+                        <span class="card-title">SpringBoot中MyBatis，MyBatisPlus操作</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -758,9 +795,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-11-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -769,11 +806,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/1614196964.github.io/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
+                    <a href="/1614196964.github.io/tags/SpringBoot-MyBatis-MyBatisPlue/">
+                        <span class="chip bg-color">SpringBoot MyBatis MyBatisPlue</span>
                     </a>
                     
                 </div>
@@ -787,13 +825,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/1614196964.github.io/2021/11/16/Blog%E9%81%87%E5%88%B0%E7%9A%84%E5%BC%AF%E8%B7%AF/">
+                <a href="/1614196964.github.io/2021/12/13/%E8%AE%A1%E5%88%92%E4%B9%A6/">
                     <div class="card-image">
                         
                         
-                        <img src="/1614196964.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="Blog遇到的弯路">
+                        <img src="/1614196964.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="计划书">
                         
-                        <span class="card-title">Blog遇到的弯路</span>
+                        <span class="card-title">计划书</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -804,7 +842,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-13
                             </span>
                         <span class="publish-author">
                             
@@ -813,14 +851,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/1614196964.github.io/tags/Blog-%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">Blog 博客</span>
-                    </a>
-                    
                 </div>
                 
             </div>
