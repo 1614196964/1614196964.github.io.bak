@@ -6,22 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://1614196964.github.io">
-  <title>C++ 面试 | ShowYouBug</title>
+  <title>操作系统 | ShowYouBug</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="命名空间namespace为了避免使用类库的时候，导致命名冲突，引入关键字namespace，来更好的控制标识符的作用域 1234567891011#include&lt;iostream&gt;using namespace std;namespace A&amp;#123;    func()&amp;#123;        cout&lt;&lt;&quot;命名空间A&quot;&lt;&lt;endl">
+  <meta name="description" content="1 操作系统概述1.1 什么是操作系统用户角度：操作系统是一个控制软件  管理应用程序 为应用程序提供服务 杀死应用程序  程序角度：操作系统是资源管理器  管理外设、分配资源 抽象 将CPU 抽象成进程 将磁盘抽象成文件 将内存抽象成地址空间    Linux Windows Android 的界面属于外壳（shell），而不是内核（kernel）操作系统研究的是kernel，处于shell 之">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++ 面试">
-<meta property="og:url" content="https://1614196964.github.io/2022/07/29/C++/index.html">
+<meta property="og:title" content="操作系统">
+<meta property="og:url" content="https://1614196964.github.io/2022/12/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="ShowYouBug">
-<meta property="og:description" content="命名空间namespace为了避免使用类库的时候，导致命名冲突，引入关键字namespace，来更好的控制标识符的作用域 1234567891011#include&lt;iostream&gt;using namespace std;namespace A&amp;#123;    func()&amp;#123;        cout&lt;&lt;&quot;命名空间A&quot;&lt;&lt;endl">
+<meta property="og:description" content="1 操作系统概述1.1 什么是操作系统用户角度：操作系统是一个控制软件  管理应用程序 为应用程序提供服务 杀死应用程序  程序角度：操作系统是资源管理器  管理外设、分配资源 抽象 将CPU 抽象成进程 将磁盘抽象成文件 将内存抽象成地址空间    Linux Windows Android 的界面属于外壳（shell），而不是内核（kernel）操作系统研究的是kernel，处于shell 之">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202207211557406.png">
-<meta property="article:published_time" content="2022-07-29T14:46:06.000Z">
-<meta property="article:modified_time" content="2022-07-29T14:10:51.521Z">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202207291441369.png">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208042029973.png">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208050934352.png">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208051045845.png">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208071042251.png">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208071039349.png">
+<meta property="og:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208071047641.png">
+<meta property="article:published_time" content="2022-12-05T03:59:55.000Z">
+<meta property="article:modified_time" content="2022-12-07T04:00:44.318Z">
 <meta property="article:author" content="苏小栋">
-<meta property="article:tag" content="C++">
+<meta property="article:tag" content="操作系统 OS os">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202207211557406.png">
+<meta name="twitter:image" content="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202207291441369.png">
   
     <link rel="alternative" href="/atom.xml" title="ShowYouBug" type="application/atom+xml">
   
@@ -139,346 +145,398 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-C++" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-操作系统" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      C++ 面试
+      操作系统
     </h1>
   
 
         
-        <a href="/1614196964.github.io/2022/07/29/C++/" class="archive-article-date">
-  	<time datetime="2022-07-29T14:46:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-29</time>
+        <a href="/1614196964.github.io/2022/12/05/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
+  	<time datetime="2022-12-05T03:59:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-12-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="命名空间namespace"><a href="#命名空间namespace" class="headerlink" title="命名空间namespace"></a>命名空间namespace</h2><p>为了避免使用类库的时候，导致命名冲突，引入关键字namespace，来更好的控制标识符的作用域</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">namespace</span> A&#123;</span><br><span class="line">    <span class="built_in">func</span>()&#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;命名空间A&quot;</span>&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>命名空间可以嵌套定义，即在一个命名空间中可以定义另一个命名空间</p>
-<p>命名空间只能全局定义</p>
-<p>命名空间是开放的，即可以随时把新的成员加入已有的命名空间当中</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">namespace</span> A&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">100</span>;</span><br><span class="line">	<span class="keyword">int</span> b = <span class="number">200</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">namespace</span> A&#123;</span><br><span class="line">	<span class="keyword">int</span> c = <span class="number">300</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>命名空间里的函数可以在外面实现</p>
-<p>无名命名空间，意味着命名空间标识符只能在本文件内访问</p>
-<h2 id="using指令"><a href="#using指令" class="headerlink" title="using指令"></a>using指令</h2><p>用using namespace 指令可以在使用命名空间的时候不加命名空间名字。</p>
-<p>可以直接using namespace 整个命名空间，using namespace std;</p>
-<p>也可以用某个命名空间内的函数或变量，using std::cout</p>
-<h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p>在32位操作系统下，占用4个字节；64位下，占8个字节</p>
-<h3 id="空指针"><a href="#空指针" class="headerlink" title="空指针"></a>空指针</h3><p>指针变量指向内存中编号为0的空间<code>int* p = NULL</code></p>
-<p>用途：初始化指针变量</p>
-<p>注意：空指针指向的内存是不可以访问的,0~255 之间的内存编号为系统占用内存，不允许用户访问</p>
-<h3 id="野指针"><a href="#野指针" class="headerlink" title="野指针"></a>野指针</h3><p>指针变量指向非法的内存空间，该内存空间不是我们申请的</p>
-<p>当访问的时候，编译可以通过，但是运行出错</p>
-<p>空指针和野指针都不是我们申请的内存空间，因此不要访问</p>
-<h3 id="const和指针"><a href="#const和指针" class="headerlink" title="const和指针"></a>const和指针</h3><ul>
-<li><p>常量指针<code>const int* p = &amp;a</code> </p>
+        <h1 id="1-操作系统概述"><a href="#1-操作系统概述" class="headerlink" title="1 操作系统概述"></a>1 操作系统概述</h1><h2 id="1-1-什么是操作系统"><a href="#1-1-什么是操作系统" class="headerlink" title="1.1 什么是操作系统"></a>1.1 什么是操作系统</h2><p>用户角度：操作系统是一个控制软件</p>
 <ul>
-<li>指针的指向可以修改，但指针指向的值不可以改</li>
-<li>const 后面紧跟的是<code>*</code>，所以取<code>*</code>操作就不允许了，也就是指向变量的值不可以改变</li>
+<li>管理应用程序</li>
+<li>为应用程序提供服务</li>
+<li>杀死应用程序</li>
 </ul>
-</li>
-<li><p>指针常量<code>int* const p = &amp;a</code> </p>
+<p>程序角度：操作系统是资源管理器</p>
 <ul>
-<li>指针的指向不可以改，但指针指向的值可以改</li>
-<li>const 后面紧跟的是常量，常量本身不可以改变，也就是不能指向其它变量</li>
+<li>管理外设、分配资源</li>
+<li>抽象<ul>
+<li>将CPU 抽象成进程</li>
+<li>将磁盘抽象成文件</li>
+<li>将内存抽象成地址空间</li>
 </ul>
 </li>
-<li><p><code>const int* const p = &amp;a</code> 都不可以改</p>
-</li>
 </ul>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>就是给变量起别名</p>
+<p>Linux Windows Android 的界面属于外壳（shell），而不是内核（kernel）操作系统研究的是kernel，处于shell 之下</p>
+<h3 id="操作系统内部组件"><a href="#操作系统内部组件" class="headerlink" title="操作系统内部组件"></a>操作系统内部组件</h3><ul>
+<li>CPU 调度器</li>
+<li>物理内存管理</li>
+<li>虚拟内存管理</li>
+<li>文件系统管理</li>
+<li>中断处理与设备驱动</li>
+</ul>
+<h3 id="操作系统特征"><a href="#操作系统特征" class="headerlink" title="操作系统特征"></a>操作系统特征</h3><ul>
+<li><p>并发：一段时间内运行多个进程，需要OS 管理和调度（并行：一个时间点运行多个进程，一般要求多个CPU）</p>
+</li>
+<li><p>共享：“同时”共享（发送文件时候访问硬盘），互斥共享（摄像头）</p>
+</li>
+<li><p>虚拟：利用多道程序设计技术，让每个用户都觉得自己独占一台计算机</p>
 <ul>
-<li>引用必须要初始化<code>int &amp;b；</code> 这是错误的</li>
-<li>引用一旦初始化后，就不可以更改了</li>
+<li>空分复用技术（虚拟存储器技术）</li>
+<li>时分复用技术（虚拟处理器）</li>
+<li>没有并发性，就谈不上虚拟性</li>
 </ul>
-<h3 id="引用做函数参数"><a href="#引用做函数参数" class="headerlink" title="引用做函数参数"></a>引用做函数参数</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mySwap</span><span class="params">(<span class="keyword">int</span> &amp;a, <span class="keyword">int</span> &amp;b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> temp = a;</span><br><span class="line">	a = b;</span><br><span class="line">	b = temp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="keyword">int</span> b = <span class="number">20</span>;</span><br><span class="line">	<span class="built_in">mySwap</span>(a, b);</span><br><span class="line">	cout&lt;&lt;a&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>可以简化指针修改实参</p>
-<h3 id="引用做函数的返回值"><a href="#引用做函数的返回值" class="headerlink" title="引用做函数的返回值"></a>引用做函数的返回值</h3><ul>
-<li>不要返回局部变量的引用</li>
+</li>
+<li><p>异步：程序的执行不是一步到底的，而是走走停停，向前推进的速度不可预知。但只要运行环境相同，OS 要保证程序运行的结果也相同</p>
+</li>
 </ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span>&amp; <span class="title">func1</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>; <span class="comment">// 局部变量存放在四区中的，栈区 </span></span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span>&amp; ref = <span class="built_in">func1</span>();</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;ref = &quot;</span>&lt;&lt;ref&lt;&lt;endl; <span class="comment">// 第一次输出正确，因为编译器做了保留 </span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;ref = &quot;</span>&lt;&lt;ref&lt;&lt;endl; <span class="comment">// 第二次输出错误，因为a 的内存已经释放 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h2 id="1-2-OS发展历史"><a href="#1-2-OS发展历史" class="headerlink" title="1.2 OS发展历史"></a>1.2 OS发展历史</h2><p>手工操作阶段：打孔纸带，输入输出慢人机速度矛盾，用户独占全机</p>
+<p>单道批处理系统：引入脱机输入输出技术（用磁带完成），并监督程序负责控制作业输入输出，缓解了一定程度人机速度矛盾，缺点是内存仅能有一道程序运行</p>
+<p>多道批处理系统：每次往内存中输入多道程序，操作系统正式诞生，由操作系统负责管理这些程序的运行。优点事躲到程序并发执行，共享计算机资源，资源利用率大大提升。缺点是响应时间长，没有人机交互能力</p>
+<p>分时操作系统：计算机以时间片为单位轮流为各个用户/作业服务，用户可以通过终端与计算机交互。优点：用户请求可以及时响应，解决了人机交互问题，并且用户对计算机操作相互独立，感受不到别人的存在。缺点：不能优先处理一些紧急任务，OS为每个用户分配的时间都是平均的</p>
+<p>实时操作系统：能够优先响应一些紧急任务，计算机接收到外部信号及时进行处理，并且要在严格时限内处理完，特点是及时性和可靠性</p>
 <ul>
-<li>函数的调用可以作为左值</li>
+<li>硬实时系统：必须绝对在严格规定时间内完成（发导弹）</li>
+<li>软实时系统：能够偶尔违反规定时间（订票）</li>
 </ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span>&amp; <span class="title">func2</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> a = <span class="number">10</span>; <span class="comment">// 全局变量保存在全局区，最后程序结束之后由系统释放 </span></span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span>&amp; ref = <span class="built_in">func2</span>();</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;ref = &quot;</span>&lt;&lt;ref&lt;&lt;endl; </span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;ref = &quot;</span>&lt;&lt;ref&lt;&lt;endl; </span><br><span class="line">	<span class="built_in">func2</span>() = <span class="number">20</span>; <span class="comment">// 如果函数的返回值是引用，这个函数可以成为左值</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;ref = &quot;</span>&lt;&lt;ref&lt;&lt;endl; </span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;ref = &quot;</span>&lt;&lt;ref&lt;&lt;endl;  </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用的本质"><a href="#引用的本质" class="headerlink" title="引用的本质"></a>引用的本质</h3><p>本质：引用的本质在C++ 内部实现是一个指针常量（指针的指向不可以修改，但是指针指向的值可以修改）</p>
-<h3 id="常量引用"><a href="#常量引用" class="headerlink" title="常量引用"></a>常量引用</h3><p>常量引用主要用来修饰形参，防止误操作</p>
-<p><code>int&amp; ref = 10</code> 这是不合法的，因为引用必须引一块合法的内存空间</p>
-<p><code>const int&amp; ref = 10</code> 这是合法的，这样编译器将代码修改成了：<code>int temp = 10; const int&amp; ref = temp</code></p>
-<h2 id="四区"><a href="#四区" class="headerlink" title="四区"></a>四区</h2><ol>
-<li>操作系统把物理硬盘代码load 到内存</li>
-<li>操作系统把C/C++ 代码分成四个区</li>
-<li>操作系统找到main 函数入口执行</li>
-</ol>
-<h3 id="代码区"><a href="#代码区" class="headerlink" title="代码区"></a>代码区</h3><p>存放CPU 执行的机器指令</p>
-<p>通常代码区是可共享的，目的是对于频繁执行的程序，只需要在内存中有一份代码即可</p>
-<p>通常代码区是只读的，原因是防止程序意外地修改了它的指令</p>
-<p>总结：你写的所有代码都会放到代码区，特点是共享和只读</p>
-<h3 id="全局区"><a href="#全局区" class="headerlink" title="全局区"></a>全局区</h3><p>全局区主要存放的数据有：全局变量、静态变量、常量</p>
+<p>网络操作系统：实现网络中各种资源的共享和各台计算机之间的通信</p>
+<p>分布式操作系统：任何工作都可以分布在这些计算机上，由他们并行、协同完成</p>
+<p>个人计算机操作系统</p>
+<h2 id="1-3-OS运行机制和体系结构"><a href="#1-3-OS运行机制和体系结构" class="headerlink" title="1.3 OS运行机制和体系结构"></a>1.3 OS运行机制和体系结构</h2><p>两种指令</p>
 <ul>
-<li>data区<ul>
-<li>主要存放已经初始化的全局变量、静态变量和常量</li>
+<li>特权指令：内存清零指令，不允许用户程序使用</li>
+<li>非特权指令：普通的运算指令</li>
 </ul>
-</li>
-<li>bss区<ul>
-<li>主要存放未初始化的全局变量、静态变量，这些未初始化的数据在程序执行前会自动被系统初始化为0或NULL</li>
-</ul>
-</li>
-<li>常量区<ul>
-<li>是全局区中划分的一个小区域，里面存放的是常量，如const修饰的全局变量，字符串常量等</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> a = <span class="number">10</span>; <span class="comment">// 全局变量  </span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">int</span> b = <span class="number">10</span>; <span class="comment">// 静态变量 </span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> c = <span class="number">10</span>; <span class="comment">// 全局常量 </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> d = <span class="number">10</span>; <span class="comment">// 静态局部变量 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>在程序运行后由产生了两个区域，栈区和堆区</p>
-<h3 id="栈区"><a href="#栈区" class="headerlink" title="栈区"></a>栈区</h3><p>由编译器自动分配释放，存放函数的参数值、返回值、局部变量等。在程序运行过程中实时加载和释放，因此，局部变量的生存周期为申请到释放该段栈空间</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>; <span class="comment">// 局部变量 </span></span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> b = <span class="number">10</span>;  <span class="comment">// const修饰局部变量 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="堆区"><a href="#堆区" class="headerlink" title="堆区"></a>堆区</h3><p>堆是一个大容器，它的容量要远远大于栈</p>
-<p>用于动态内存分配</p>
-<p>堆在内存中位于BSS区和栈区之间</p>
-<p>一般由程序员分配和释放，若程序员不释放，程序结束时由操作系统回收</p>
-<p>malloc/new/free/delete</p>
-<h3 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h3><p>全局区、代码区、堆区、栈区存储地址以此下降</p>
-<p>堆和栈的生长方向：</p>
+<p>处理器两种状态</p>
 <ul>
-<li><p>栈：从大地址到小地址</p>
-</li>
-<li><p>堆：从小地址到大地址</p>
-</li>
+<li>用户态（目态）：只能执行非特权指令</li>
+<li>核心态（管态）：都可以执行</li>
+<li>用程序状态字寄存器PSW中某个标志位来标识的</li>
 </ul>
-<h2 id="函数高级"><a href="#函数高级" class="headerlink" title="函数高级"></a>函数高级</h2><h3 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a>默认参数</h3><p>声明和实现只能有一个有默认参数，以下代码无法通过编译</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> a = <span class="number">10</span>, <span class="keyword">int</span> b = <span class="number">20</span>)</span></span>; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> a = <span class="number">10</span>, <span class="keyword">int</span> b = <span class="number">20</span>)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a+b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="占位参数"><a href="#占位参数" class="headerlink" title="占位参数"></a>占位参数</h3><p>占位参数只有参数类型的声明，而没有参数名声明</p>
-<p>一般情况下，在函数体内无法使用占位参数</p>
-<p>但是如果你不传参的话还会报错</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span>)</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;a&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	<span class="built_in">func</span>(<span class="number">20</span>, <span class="number">10</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>还可以设置默认值<code>void func(int a, int = 10)</code></p>
-<p>意义：为以后程序的扩展留下线索；兼容C语言程序中可能出现的不规范语法</p>
-<p>在重载后置++运算符的时候需要给括号里传一个int占位参数</p>
-<p><code>MyInteger&amp; operator++()</code>前置++</p>
-<p><code>MyInteger&amp; operator++(int)</code>后置++，而且必须是int</p>
-<h3 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a>函数重载</h3><h4 id="引用作为重载的条件"><a href="#引用作为重载的条件" class="headerlink" title="引用作为重载的条件"></a>引用作为重载的条件</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> &amp;a)</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;func(int&amp; a)&quot;</span>&lt;&lt;endl; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> &amp;a)</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;func(const int &amp;a)&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	<span class="keyword">int</span> a = <span class="number">10</span>;</span><br><span class="line">	<span class="built_in">func</span>(a); <span class="comment">// 会调第一个</span></span><br><span class="line">	<span class="built_in">func</span>(<span class="number">10</span>); <span class="comment">// 会调第二个 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>func(a); // 会调第一个<br>func(10); // 会调第二个</p>
-<h4 id="函数重载碰到默认参数"><a href="#函数重载碰到默认参数" class="headerlink" title="函数重载碰到默认参数"></a>函数重载碰到默认参数</h4><p>当函数重载碰到默认参数时，可能会出现二义性</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b = <span class="number">10</span>)</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;func(int a, int b = 10)&quot;</span>&lt;&lt;endl; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">(<span class="keyword">int</span> a)</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;func(int a)&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	<span class="built_in">func</span>(<span class="number">10</span>); <span class="comment">// 会报错 </span></span><br><span class="line">    <span class="built_in">func</span>(<span class="number">10</span>,<span class="number">20</span>); <span class="comment">// 不报错 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><p>C++ 面向对象的三大特征：封装、继承、多态</p>
-<p>默认情况下C++编译器至少给一个类添加4个函数</p>
+<p>两种程序</p>
+<ul>
+<li>内核程序：都可以执行，运行在和心态</li>
+<li>应用程序：运行在用户态</li>
+</ul>
+<p>操作系统的内核</p>
+<ul>
+<li>大内核：将操作系统主要功能模块都作为系统内核，运行在核心态。优点是高性能，缺点是内核庞大，结构混乱</li>
+<li>微内核：只把最基本的功能保留在内核。优点是结构清晰，缺点是频繁切换用户态和核心态性能低</li>
+</ul>
+<h2 id="1-4-中断和异常"><a href="#1-4-中断和异常" class="headerlink" title="1.4 中断和异常"></a>1.4 中断和异常</h2><h3 id="1-4-1-中断机制"><a href="#1-4-1-中断机制" class="headerlink" title="1.4.1 中断机制"></a>1.4.1 中断机制</h3><p>本质：发生中断就意味着需要操作系统介入，开展管理工作</p>
 <ol>
-<li>默认构造函数（无参，函数体为空）</li>
-<li>默认析构函数（无参，函数体为空）</li>
-<li>默认拷贝构造函数，对属性进行值拷贝</li>
-<li>赋值运算符operator= 对属性进行值拷贝</li>
+<li>当中断发生，CPU立即进行核心态</li>
+<li>中断发生后，当前的进程暂停运行，由操作系统内核对中断处理</li>
 </ol>
-<h3 id="struct和class的区别"><a href="#struct和class的区别" class="headerlink" title="struct和class的区别"></a>struct和class的区别</h3><p>在C++中struct和class唯一的区别就在于默认的访问权限不同</p>
+<p>中断可以使用户态到和核心态（唯一途径），使操作系统获得计算机的控制权，有了中断才能实现多道程序并发执行</p>
+<p>用户态 -&gt; 核心态 用 中断</p>
+<p>核心态 -&gt; 用户态 执行一个特权指令，修改程序状态字PSW的某一个标志</p>
+<h3 id="1-4-2-中断的分类"><a href="#1-4-2-中断的分类" class="headerlink" title="1.4.2 中断的分类"></a>1.4.2 中断的分类</h3><p>内中断（异常、陷入、例外）：信号来源CPU内部，与当前执行的指令有关。系统调用、缺页、整除0</p>
+<p>外中断（中断）：信号来源CPU外部，与当前执行的指令无关。IO操作完成发出中断信号，用户强行终止</p>
+<h2 id="1-5-系统调用"><a href="#1-5-系统调用" class="headerlink" title="1.5 系统调用"></a>1.5 系统调用</h2><p>操作系统为用户直接提供的叫命令接口</p>
+<p>操作系统为<strong>应用程序提供的接口</strong>叫系统调用，应用程序可以通过发出系统调用请求来获得操作系统的服务</p>
+<p>系统调用的相关处理需要在核心态进行</p>
+<h3 id="1-5-1-系统调用与库函数的区别"><a href="#1-5-1-系统调用与库函数的区别" class="headerlink" title="1.5.1 系统调用与库函数的区别"></a>1.5.1 系统调用与库函数的区别</h3><p>库函数是编程语言对系统调用的封装，以隐藏系统调用的一些细节</p>
+<p>传递系统调用参数 -&gt; 执行陷入指令（用户态），引发内中断，CPU进入核心态</p>
+<p>发送系统调用请求是在用户态，而对系统调用的相应处理是在核心态下进行</p>
+<p><strong>陷入指令是唯一一个只能在用户态而不能在核心态执行的指令</strong></p>
+<h1 id="2-进程"><a href="#2-进程" class="headerlink" title="2 进程"></a>2 进程</h1><h2 id="2-1-进程的定义、组织方式等"><a href="#2-1-进程的定义、组织方式等" class="headerlink" title="2.1 进程的定义、组织方式等"></a>2.1 进程的定义、组织方式等</h2><p>引入多道程序之后，内存中会存放多个任务，所以引入了进程</p>
+<p>程序段、数据段、PCB三部分组成了进程实体（进程映像）一般情况下，我们把进程实体简称为进程。创建进程，就是创建进程实体中的PCB</p>
+<p>PCB是进程存在的唯一标志</p>
+<p>进程是进程实体的运行过程，是系统进行资源分配和调度的一个独立单位；严格来说进程实体和进程不一样，进程实体是静态的，进程是动态的</p>
+<h3 id="2-1-1-组织方式"><a href="#2-1-1-组织方式" class="headerlink" title="2.1.1 组织方式"></a>2.1.1 组织方式</h3><p>链接方式</p>
 <ul>
-<li>struct默认权限为公共</li>
-<li>class默认权限为私有</li>
+<li>按照进程状态将PCB分为多个队列</li>
+<li>操作系统持有指向各个队列的指针</li>
 </ul>
-<h3 id="构造函数和析构函数"><a href="#构造函数和析构函数" class="headerlink" title="构造函数和析构函数"></a>构造函数和析构函数</h3><p>创建对象的时候，构造函数会自动调用，而且只调用一次</p>
-<p>析构函数和类名相同，在名称前面加~</p>
-<p>析构函数不可以有参数，不可以发生重载</p>
-<p>对象在销毁前会自动调用析构函数，而且只会调用一次</p>
-<p>这俩都需要写在public之下</p>
-<h4 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h4><p>注意：调用无参构造函数的时候不要加<code>()</code> 编译器会认为是函数的声明，而不会去调用无参构造函数</p>
-<p><code>Person p1 = Person(10)</code> 其中，<code>Person（10）</code> 是一个匿名对象，当它出现在等号右边的时候，等号左边的就是它的名字</p>
-<p>匿名对象有个特点：执行结束之后，系统会立即回收掉匿名对象</p>
-<p>拷贝构造函数：<code>Person(const Person &amp;p)</code> 注意参数</p>
-<p>注意：不要利用拷贝构造函数初始化匿名对象<code>Person（p）</code> 编译器会认为<code>Person（p） === Person p</code> 重定义。可以把它写在等号右边但是不要单独写它</p>
-<p>隐式调用</p>
+<p>索引方式</p>
 <ul>
-<li><code>Person p = 10 === Person p = Person(10)</code></li>
-<li><code>Person p = p1 === Person p = Person(p1)</code></li>
+<li>根据进程状态的不同，建立几张索引表</li>
+<li>操作系统持有指向各个索引表的指针</li>
 </ul>
-<h4 id="调用拷贝构造函数的时机"><a href="#调用拷贝构造函数的时机" class="headerlink" title="调用拷贝构造函数的时机"></a>调用拷贝构造函数的时机</h4><ol>
-<li>使用一个已创建完毕的对象来初始化一个新对象</li>
-<li>值传递的方式给函数传参</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">doWork</span><span class="params">(Person p)</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	Person p;</span><br><span class="line">	<span class="built_in">doWork</span>(p); <span class="comment">// 在这里传参的时候会调用拷贝构造函数 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>值方式返回局部对象，如果想返回它本身的话，用<code>Person&amp;</code> 做返回值类型</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">Person <span class="title">doWork</span><span class="params">()</span></span>&#123;</span><br><span class="line">	Person p;</span><br><span class="line">	<span class="keyword">return</span> p; <span class="comment">// 返回的是拷贝后的 </span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="其它类对象作为本类的成员"><a href="#其它类对象作为本类的成员" class="headerlink" title="其它类对象作为本类的成员"></a>其它类对象作为本类的成员</h4><p>当其它类对象作为本类成员，构造函数的时候，先构造其它类的对象，再构造自身</p>
-<p>析构相反</p>
-<h3 id="静态成员"><a href="#静态成员" class="headerlink" title="静态成员"></a>静态成员</h3><p>静态成员变量</p>
-<ol>
-<li>所有对象都共享同一份数据</li>
-<li>编译阶段就分配内存</li>
-<li>类内声明，类外初始化操作</li>
-<li>有访问权限，得给他弄成public下的</li>
-</ol>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>&#123;</span>	</span><br><span class="line"><span class="keyword">public</span>: </span><br><span class="line">	<span class="keyword">static</span> <span class="keyword">int</span> a; <span class="comment">// 类内声明 </span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">int</span> Person::a = <span class="number">100</span>; <span class="comment">// 类外初始化 </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	Person p;</span><br><span class="line">	cout&lt;&lt;p.a&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;Person::a&lt;&lt;endl; <span class="comment">// 通过类名访问 </span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>静态成员函数</p>
-<ol>
-<li>所有对象共享同一个函数</li>
-<li><strong>静态成员函数只能访问静态成员变量</strong>，因为如果可以访问的话，非静态成员变量是每个对象都有的，这个静态成员函数无法区分到底改变的是哪一个对象的成员变量</li>
-<li>静态成员函数也有访问权限</li>
-</ol>
-<h3 id="成员变量和成员函数分开存储"><a href="#成员变量和成员函数分开存储" class="headerlink" title="成员变量和成员函数分开存储"></a>成员变量和成员函数分开存储</h3><p>空对象（类里什么都没有）占用内存空间：1</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>&#123;</span>	</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	Person p;</span><br><span class="line">    <span class="comment">// sizeof(p) = 1</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;sizeof(p) = &quot;</span>&lt;&lt;<span class="built_in"><span class="keyword">sizeof</span></span>(p)&lt;&lt;endl; </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>C++编译器会给每个空对象也分配一个内存空间，为了区分空对象的位置，每个空对象也应该有一个独一无二的内存地址</p>
+<h2 id="2-2-进程的状态和转换"><a href="#2-2-进程的状态和转换" class="headerlink" title="2.2 进程的状态和转换"></a>2.2 进程的状态和转换</h2><p>三种基本状态</p>
 <ul>
-<li><p>非静态成员变量，属于类对象上（如果上面类里加了一个<code>int a</code>之后<code>sizeof(p) = 4</code>）</p>
+<li>运行态</li>
+<li>就绪态：有了处理机之外的其它资源</li>
+<li>阻塞态</li>
+</ul>
+<p>另外两种状态</p>
+<ul>
+<li>创建态</li>
+<li>终止态</li>
+</ul>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202207291441369.png"></p>
+<p>阻塞态能直接转化为运行态，也不能由就绪态直接转化为阻塞态（因为进入阻塞态是进程主动请求的，必然需要在运行时才能发出这种请求）</p>
+<p>运行态 –&gt; 终止态：进程运行结束或遇到不可恢复的错误</p>
+<h2 id="2-3-进程控制"><a href="#2-3-进程控制" class="headerlink" title="2.3 进程控制"></a>2.3 进程控制</h2><p>进程控制就是要实现进程之间的状态转换</p>
+<h3 id="如何实现？"><a href="#如何实现？" class="headerlink" title="如何实现？"></a>如何实现？</h3><p>用原语实现，原语特点是执行期间不允许中断，这种不可中断的操作即原子操作</p>
+<p>原语采用 “关中断” 和 “开中断” 指令实现</p>
+<p>关中断指令<br>原语代码1<br>原语代码2<br>开中断指令</p>
+<p>原语运行在核心态，是特权指令</p>
+<h3 id="有哪些原语？"><a href="#有哪些原语？" class="headerlink" title="有哪些原语？"></a>有哪些原语？</h3><p>创建原语：申请空白PCB、为新进程分配所需资源、初始化PCB、将PCB插入就绪队列</p>
+<p>引起进程创建的事件：</p>
+<ul>
+<li>用户登录：分时系统中，用户登录成功会为其创建新进程</li>
+<li>作业调度：多道批处理系统，新作业到内存会为其创建新进程</li>
+<li>提供服务：用户向OS提供服务，创建新进程处理</li>
+<li>应用请求：用户进程主动请求创建一个子进程</li>
+</ul>
+<p>撤销原语</p>
+<p>阻塞原语（与唤醒原语成对使用）</p>
+<p>唤醒原语</p>
+<p>切换原语</p>
+<h2 id="2-4-进程通信"><a href="#2-4-进程通信" class="headerlink" title="2.4 进程通信"></a>2.4 进程通信</h2><p>进程通信就是进程之间的信息交换</p>
+<p>进程是分配系统资源的单位（包括内存地址空间），因此各进程拥有自己的内存地址空间</p>
+<p>OS提供了三种方法</p>
+<h3 id="共享存储"><a href="#共享存储" class="headerlink" title="共享存储"></a>共享存储</h3><p>在内存中划分一块空间作为两个进程共享的，但是两个进程对共享空间的访问必须是互斥的</p>
+<ol>
+<li>基于数据结构的共享：规定你只能传输某一数据结构，比如长度为10的数组，是一种<strong>低级通信方式</strong></li>
+<li>基于存储区的共享：进程控制放啥，是一种<strong>高级通信方式</strong></li>
+</ol>
+<h3 id="管道通信"><a href="#管道通信" class="headerlink" title="管道通信"></a>管道通信</h3><p>用于连接读写进程的一个共享文件，又名pipe文件，其实就是在内存中开辟一个大小固定的缓冲区</p>
+<ol>
+<li>管道只能采用半双工通信（某一时间段只能单向传输），如果要实现双向同时通信则需要两个管道</li>
+<li>各进程要互斥地访问管道</li>
+<li>数据以字符流形式进入管道，当管道写满，写进程的write()系统调用将被阻塞。当管道变空，读进程的read()系统调用将被阻塞</li>
+<li>如果没写满，就不允许读；如果没空，就不允许写</li>
+<li>数据一旦被取出，就会从管道抛弃，所以意味着读进程最多只能有一个，否则会读错</li>
+</ol>
+<h3 id="消息传递"><a href="#消息传递" class="headerlink" title="消息传递"></a>消息传递</h3><p>进程间数据交换以<strong>格式化信息</strong>为单位。进程通过OS提供的发送/接受消息两个原语进行数据交换。消息头（发送进程ID、接受进程ID、消息类型、长度等）：消息体</p>
+<ol>
+<li>直接通信方式：消息直接挂到接受进程的消息缓冲队列上</li>
+<li>间接通信方式：消息要先发送到中间实体（信箱）中，也称“信箱通信方式”</li>
+</ol>
+<h2 id="2-5-线程"><a href="#2-5-线程" class="headerlink" title="2.5 线程"></a>2.5 线程</h2><p>线程是一个基本的CPU执行单元，也是程序执行流的最小单元</p>
+<p>引入线程后，进程只作为除CPU之外的系统资源的分配单元</p>
+<p>线程几乎不拥有系统资源，同一进程的不同线程之间共享进程的资源</p>
+<p>由于共享内存地址空间，同一进程中线程间通信无需OS干扰</p>
+<p>同一进程的线程切换，不会引起进程切换</p>
+<h3 id="用户级线程"><a href="#用户级线程" class="headerlink" title="用户级线程"></a>用户级线程</h3><p>由应用程序通过线程库实现，线程管理由应用程序</p>
+<p>线程切换在用户态下完成，无需OS干预</p>
+<p>在用户看来，有多个线程，但是在OS内核看来，意识不到线程存在，用户级线程就是用户视角看到的线程</p>
+<h3 id="内核级线程"><a href="#内核级线程" class="headerlink" title="内核级线程"></a>内核级线程</h3><p>内核级线程管理工作由OS内核完成，调度切换必须在核心态下</p>
+<p>OS只能看得见内核级线程，所以内核级线程才是处理机分配的单位</p>
+<p>即使有多个用户级线程n个，最多只能分配到m个内核级线程上并行运行，也就是说最多m个同时运行</p>
+<h2 id="2-6-处理机调度"><a href="#2-6-处理机调度" class="headerlink" title="2.6 处理机调度"></a>2.6 处理机调度</h2><p>多道程序系统中，进程的数量往往多于处理机个数，处理机调度就是按一定的算法选择一个进程并将处理机分配给它运行，以实现程序并发执行</p>
+<h3 id="高级调度（作业调度）"><a href="#高级调度（作业调度）" class="headerlink" title="高级调度（作业调度）"></a>高级调度（作业调度）</h3><p>外存 –&gt; 内存</p>
+<p>按一定的原则从外存上处于后备队列的作业中挑选一个，给他们分配内存等必要资源，并建立相应的进程，使他们获得竞争处理机的权利</p>
+<h3 id="中级调度（内存调度）"><a href="#中级调度（内存调度）" class="headerlink" title="中级调度（内存调度）"></a>中级调度（内存调度）</h3><p>进入虚拟存储技术之后，可以将暂时不能运行的进程调至外存等待</p>
+<p>目的是：提高内存利用率和系统吞吐量</p>
+<p>暂时调到外存等待的进程称为挂起状态，但是PCB不会调到外存而是会常驻内存，被挂起的进程PCB会放入挂起队列里</p>
+<p>中级调度就是决定要将哪个处于挂起状态的进程重新调入内存</p>
+<p>一个进程可能被调入调出多次，所以中级调度的频率会更高</p>
+<h3 id="低级调度（进程调度）"><a href="#低级调度（进程调度）" class="headerlink" title="低级调度（进程调度）"></a>低级调度（进程调度）</h3><p>按照某种方法策略从就绪队列中选择一个进程，把CPU分配给它，是OS中<strong>最基本的一种调度</strong></p>
+<p>频率很高，几十毫秒一次</p>
+<h2 id="2-7-进程调度"><a href="#2-7-进程调度" class="headerlink" title="2.7 进程调度"></a>2.7 进程调度</h2><p>进程调度也是低级调度，是按照某种算法从就绪队列中选择一个进程为其分配处理机</p>
+<p>时机：当前运行的进程主动或被动放弃处理机</p>
+<p>不能进行进程调度：</p>
+<ul>
+<li>处理中断的过程</li>
+<li>进程在OS内核程序临界区中，注意：进程在访问普通临界区的时候可以调度，临界区：访问临界资源的那段代码，临界资源：一段时间内只允许一个进程使用的资源</li>
+<li>在原子操作过程中</li>
+</ul>
+<h2 id="2-8-进程同步-互斥"><a href="#2-8-进程同步-互斥" class="headerlink" title="2.8 进程同步/互斥"></a>2.8 进程同步/互斥</h2><p>信号量机制、PV操作</p>
+<h2 id="2-9-管程"><a href="#2-9-管程" class="headerlink" title="2.9 管程"></a>2.9 管程</h2><p>目的是更方便地实现进程互斥和同步</p>
+<p>需要在管程中定义共享数据结构</p>
+<p>需要在管程中定义用于访问这些共享数据结构的入口，也就是函数</p>
+<p>只有通过特定的入口才能访问共享数据</p>
+<p>管程中有很多入口，但是每次只开放其中一个“入口”，并且只能让一个进程或线程进入（这种互斥的特性是编译器负责实现的）</p>
+<p>Java中关键字synchronized描述一个函数，那么这个函数就相当于一个管程</p>
+<h2 id="2-10-死锁"><a href="#2-10-死锁" class="headerlink" title="2.10 死锁"></a>2.10 死锁</h2><p>每个人都占有一个资源，同时又在等待另一个人手里的资源，发生死锁。在并发环境下，各进程因竞争资源而造成的一种互相等待对方手里的资源，导致各进程都阻塞，都无法向前推进的现象就是死锁</p>
+<h3 id="死锁和饥饿"><a href="#死锁和饥饿" class="headerlink" title="死锁和饥饿"></a>死锁和饥饿</h3><ul>
+<li>进入饥饿的进程可以只有一个，但死锁进程必须是两个或两个以上</li>
+<li>处于饥饿的进程可以是一个就绪态，但死锁进程一定是阻塞态</li>
+</ul>
+<h3 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h3><ol>
+<li>互斥条件：只有对必须互斥使用的资源的争抢才会导致死锁</li>
+<li>不剥夺条件：进程获得的资源只能主动释放</li>
+<li>请求和保持条件：进程已经保持了至少一个资源，但又提出了新的资源请求，而资源又被其它进程占有</li>
+<li>循环等待条件：存在一种进程资源的循环等待链</li>
+</ol>
+<p>避免死锁：银行家算法</p>
+<p>安全序列，就是系统按照这种序列分配资源，则每个进程都能顺利完成，只要找出一个安全序列，系统就是安全状态</p>
+<p>系统处于安全状态就一定不会产生死锁，如果系统进入不安全状态，就有可能发生死锁</p>
+<p>因此在资源分配之前就预先判断这次分配会不会导致系统进入不安全状态</p>
+<h1 id="3-内存"><a href="#3-内存" class="headerlink" title="3 内存"></a>3 内存</h1><h2 id="3-1-基础知识"><a href="#3-1-基础知识" class="headerlink" title="3.1 基础知识"></a>3.1 基础知识</h2><p>写程序到运行：源代码——编译——链接——装入（内存）</p>
+<p>三种链接方式：</p>
+<ul>
+<li>静态链接：装入前链接程一个完整装入模块</li>
+<li>装入时动态链接：运行前边装入边链接</li>
+<li>运行时动态链接：运行时需要目标模块才装入并链接</li>
+</ul>
+<p>三种装入方式：</p>
+<ul>
+<li>绝对装入：编译时产生绝对地址（单道程序）</li>
+<li>可重定位装入：装入时将逻辑地址转化为物理地址</li>
+<li>动态运行时装入：运行时将逻辑地址转化为物理地址，需要设置重定位寄存器</li>
+</ul>
+<p>操作系统管理内存：</p>
+<ol>
+<li>OS负责内存空间的分配与回收</li>
+<li>OS需要提供某种技术从逻辑上对内存空间进行扩充</li>
+<li>OS需要提供地址转换功能：逻辑地址 到 物理地址</li>
+<li>OS需要提供内存保护功能，保证各进程在各自存储空间内运行，互不干扰<ol>
+<li>CPU中设置上下限寄存器</li>
+<li>重定位寄存器（基址寄存器）和界地址寄存器（限长寄存器）进行越界检查。重定位寄存器中存放起始物理地址，界地址寄存器中存放的是进程的最大逻辑地址</li>
+</ol>
 </li>
-<li><p>静态成员变量，不属于类对象上</p>
-</li>
-<li><p>非静态成员函数，不属于类对象上</p>
-</li>
-<li><p>静态成员函数，不属于类对象上</p>
-</li>
-</ul>
-<h3 id="常函数"><a href="#常函数" class="headerlink" title="常函数"></a>常函数</h3><p>常函数指的是在成员函数后面加一个const 关键字</p>
-<p>常函数里不能改变成员变量</p>
-<p>原因是：每个成员函数里都有一个this指针，它的本质是指针常量<code>Person* const this</code>指针常量是不可以修改的，在成员函数后加const 之后就相当于变成了<code>const Person* const this</code></p>
-<p>但是如果在成员变量前面加上关键字mutable，就可以修改了</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> <span class="keyword">const</span></span>&#123;</span><br><span class="line">		<span class="comment">// 这里本质上是this-&gt;a = 10 </span></span><br><span class="line">		a = <span class="number">10</span>; <span class="comment">// 报错 </span></span><br><span class="line">		b = <span class="number">10</span>; <span class="comment">// 通过 </span></span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">int</span> a;</span><br><span class="line">	<span class="keyword">mutable</span> <span class="keyword">int</span> b; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="常对象"><a href="#常对象" class="headerlink" title="常对象"></a>常对象</h3><p><code>const Person p</code>常对象也不能修改一般的成员变量，但是可以修改mutable修饰的</p>
-<p>常对象只能调用常函数，因为普通成员函数可以修改成员变量，所以可能导致间接修改</p>
-<h3 id="友元"><a href="#友元" class="headerlink" title="友元"></a>友元</h3><p>你让谁称为你的友元，它就可以访问你的私有属性，有以下三种情况</p>
-<p>全局函数做友元</p>
-<ul>
-<li>把它声明在类里，用friend关键字，跟public同级但是有缩进</li>
-</ul>
-<p>友元类</p>
-<ul>
-<li>跟上面大同小异</li>
-</ul>
-<p>成员函数做友元</p>
-<ul>
-<li>大同小异，在函数前面加<code>类名::</code>表示是哪个类的</li>
-</ul>
-<h3 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h3><p>成员函数重载：<code>Person oprator+ (const Person&amp; p)</code>本质上是<code>p1.operator+(p2)</code> 但可以简化成<code>p1+p2 </code></p>
-<p>全局函数重载：<code>Person operator+ (const Person&amp; p1, const Person&amp; p2)</code>本质上是<code>operator+(p1, p2)</code></p>
-<p>注意：operator+ 就是默认的函数名，而且运算符重载也可以进行函数重载</p>
-<p>对于内置的数据类型表达式是不能改变的，只能改变你自定义的数据类型</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">Person</span>(<span class="keyword">int</span> a)&#123;</span><br><span class="line">		<span class="keyword">this</span>-&gt;a = a;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">Person</span>()&#123;&#125;</span><br><span class="line"><span class="comment">//	Person operator+ (const Person&amp; p)&#123;</span></span><br><span class="line"><span class="comment">//		Person temp;</span></span><br><span class="line"><span class="comment">//		temp.a = this-&gt;a + p.a;</span></span><br><span class="line"><span class="comment">//		return temp;	</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line">	<span class="keyword">int</span> a;</span><br><span class="line">&#125;;</span><br><span class="line">Person <span class="keyword">operator</span>+ (<span class="keyword">const</span> Person&amp; p1, <span class="keyword">const</span> Person&amp; p2)&#123;</span><br><span class="line">	Person temp;</span><br><span class="line">	temp.a = p1.a + p2.a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	<span class="function">Person <span class="title">p1</span><span class="params">(<span class="number">10</span>)</span></span>;</span><br><span class="line">	<span class="function">Person <span class="title">p2</span><span class="params">(<span class="number">20</span>)</span></span>;</span><br><span class="line">	Person p3 = p1 + p2;</span><br><span class="line">	cout&lt;&lt;p3.a&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="左移运算符重载-lt-lt"><a href="#左移运算符重载-lt-lt" class="headerlink" title="左移运算符重载&lt;&lt;"></a>左移运算符重载&lt;&lt;</h4><p>一般不会利用成员函数重载&lt;&lt; 运算符，因为无法实现cout在左侧</p>
-<p>强烈建议看b站黑马P122集：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1et411b73Z?p=122&spm_id_from=pageDriver&vd_source=3d7cc8d24fb2e44abb4e700a46b8b378">黑马程序员匠心之作|C++教程从0到1入门编程,学习编程不再难_哔哩哔哩_bilibili</a></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ostream&amp; <span class="keyword">operator</span>&lt;&lt;(ostream&amp; cout, Person p)&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a = &quot;</span>&lt;&lt;p.a;</span><br><span class="line">	<span class="keyword">return</span> cout;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="递增运算符重载"><a href="#递增运算符重载" class="headerlink" title="递增运算符重载++"></a>递增运算符重载++</h4><p>分为前置++和后置++</p>
-<p>在实现方面前置++需要返回引用，而后置++需要返回本身，因为后置++是通过一个临时变量来记录它之前的状态，当执行完之后临时变量就会被回收，所以再返回引用的话算是非法操作</p>
-<p>后置++与前置++采用函数重载方式区分，后置++需要在参数栏填占位参数int</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyInt</span>&#123;</span></span><br><span class="line">	<span class="keyword">friend</span> ostream&amp; <span class="keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInt myint);</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">MyInt</span>()&#123;</span><br><span class="line">		n = <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	MyInt&amp; <span class="keyword">operator</span>++()&#123;</span><br><span class="line">		n++;</span><br><span class="line">		<span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	MyInt <span class="keyword">operator</span>++(<span class="keyword">int</span>)&#123;</span><br><span class="line">		MyInt temp = *<span class="keyword">this</span>;</span><br><span class="line">		n++;</span><br><span class="line">		<span class="keyword">return</span> temp;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ostream&amp; <span class="keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInt myint)&#123;</span><br><span class="line">	cout&lt;&lt;myint.n;</span><br><span class="line">	<span class="keyword">return</span> cout;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="重载函数调用"><a href="#重载函数调用" class="headerlink" title="重载函数调用()"></a>重载函数调用()</h4><p>由于使用起来非常类似于函数调用，因此称为仿函数</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyPrint</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">operator</span><span class="params">()</span><span class="params">(string str)</span></span>&#123;</span><br><span class="line">		cout&lt;&lt;str&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	MyPrint myprint;</span><br><span class="line">	<span class="built_in">myprint</span>(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202207211557406.png"></p>
-<p>继承中，先调用父类构造函数，再调用子类构造函数，析构顺序相反</p>
-<p>父类中private 属性也被继承但是编译器给做了隐藏，所以访问不到</p>
-<p>如果子类中出现父类同名的成员函数，子类的同名成员函数会隐藏掉父类所有的同名成员函数（包括重载的所有版本），想访问，加作用域<code>s.Base::func()</code></p>
-<h3 id="虚继承"><a href="#虚继承" class="headerlink" title="虚继承"></a>虚继承</h3><p>虚继承是为了解决菱形继承问题的</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sheep</span> :</span> <span class="keyword">public</span> Animal&#123;&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tuo</span> :</span> <span class="keyword">public</span> Animal&#123;&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">YangTuo</span> :</span> <span class="keyword">public</span> Sheep, <span class="keyword">public</span> Tuo&#123;&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>上面例子中，羊类和驼类都继承了动物类，羊驼继承了羊类和驼类，动物类有一个年龄成员，所以在羊驼类中有两个年龄，一个是从羊类继承下来的，另一个是从驼类。产生了二义性并且导致资源浪费</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="keyword">int</span> age;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sheep</span> :</span> <span class="keyword">virtual</span> <span class="keyword">public</span> Animal&#123;&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Tuo</span> :</span> <span class="keyword">virtual</span> <span class="keyword">public</span> Animal&#123;&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">YangTuo</span> :</span> <span class="keyword">public</span> Sheep, <span class="keyword">public</span> Tuo&#123;&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>可以用虚继承，这样Animal类就成为了虚基类，YangTuo类中也只有一份age属性，Sheep类和Tuo类里都是继承的指针，指向真正的数据，也就是YangTuo类的</p>
-<h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><p>多态分为两种：静态多态和动态多态</p>
-<ul>
-<li>静态多态：函数重载、运算符重载</li>
-<li>动态多态：派生类和虚函数实现运行时多态</li>
-</ul>
-<p>区别：</p>
-<ul>
-<li>静态多态的函数地址早绑定——编译阶段确定函数地址</li>
-<li>动态多态的函数地址晚绑定——运行阶段确定函数地址</li>
-</ul>
-<p>动态多态满足条件：</p>
-<ul>
-<li>有继承关系</li>
-<li>子类重写父类中虚函数</li>
-</ul>
-<p>原理有个虚函数指针和虚函数表：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1et411b73Z?p=136&vd_source=3d7cc8d24fb2e44abb4e700a46b8b378">黑马程序员匠心之作|C++教程从0到1入门编程,学习编程不再难_哔哩哔哩_bilibili</a></p>
-<h3 id="纯虚函数和抽象类"><a href="#纯虚函数和抽象类" class="headerlink" title="纯虚函数和抽象类"></a>纯虚函数和抽象类</h3><p>只要有一个纯虚函数，这个类就成为抽象类</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Base</span>&#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>抽象类特点</p>
+</ol>
+<h2 id="3-2-覆盖与交换"><a href="#3-2-覆盖与交换" class="headerlink" title="3.2 覆盖与交换"></a>3.2 覆盖与交换</h2><h3 id="覆盖"><a href="#覆盖" class="headerlink" title="覆盖"></a>覆盖</h3><p>程序分为多个段，常用段常驻内存，不常用的需要时调入</p>
+<p>内存中分为固定区和若干覆盖区</p>
+<p>固定区存放常驻内存的段，不常用的放在覆盖区，需要时调入内存</p>
+<p>缺点是对用户不透明，增加用户编程负担</p>
+<h3 id="交换"><a href="#交换" class="headerlink" title="交换"></a>交换</h3><p>内存将系统中某些进程暂时换出外存，将外存某些已具备运行条件的进程换入内存</p>
+<p>通常把磁盘空间分为文件区和对换区</p>
+<p>文件区追求空间利用率，采用离散分配</p>
+<p>对换区主要追求换入换出速度，采用连续分配</p>
+<p>对换区的IO速度比文件区更快</p>
+<p>PCB会常驻内存</p>
+<h2 id="3-3-连续内存分配"><a href="#3-3-连续内存分配" class="headerlink" title="3.3 连续内存分配"></a>3.3 连续内存分配</h2><p>内部碎片：分配给某进程的内存区域中，有些部分没用上</p>
+<p>外部碎片：内存中某些空闲分区太小，难以利用，可以用紧凑技术解决外部碎片</p>
+<h3 id="单一连续分配"><a href="#单一连续分配" class="headerlink" title="单一连续分配"></a>单一连续分配</h3><p>只支持单道程序，内存分为系统区和用户区</p>
+<h3 id="固定分区分配"><a href="#固定分区分配" class="headerlink" title="固定分区分配"></a>固定分区分配</h3><p>支持多道程序，内存用户区分为若干个大小固定的分区，可以大小相等也可以不等，每个分区只能装一个作业</p>
+<h3 id="动态分区分配"><a href="#动态分区分配" class="headerlink" title="动态分区分配"></a>动态分区分配</h3><p>又称可变分区分配，这种不会预先划分内存分区，而是在进程装入内存时根据进程的大小动态建立分区</p>
+<p>用空闲分区表或空闲分区链表示空闲分区</p>
+<p>分配算法：</p>
 <ol>
-<li>无法实例化对象</li>
-<li>抽象类的子类，必须要重写父类中的纯虚函数，否则也属于抽象类</li>
+<li>首次适应算法：从低地址开始查找，找到第一个能满足大小的空闲分区</li>
+<li>最佳适应算法：空闲分区按容量递增，找到第一个满足的空闲分区，优先使用最小的，会留下很多外部碎片</li>
+<li>最坏适应算法：优先使用最大的，大进程来了可能无法分配</li>
+<li>邻近适应算法：按地址递增顺序排列，从上次结束的位置开始查找，找到大小满足的第一个</li>
 </ol>
-<h3 id="虚析构和纯虚析构"><a href="#虚析构和纯虚析构" class="headerlink" title="虚析构和纯虚析构"></a>虚析构和纯虚析构</h3><p>父类指针在析构的时候，不会调用子类的析构函数，导致子类中如果有堆区属性，出现内存泄漏</p>
-<p>利用虚析构可以解决，父类指针释放子类对象时不干净的问题</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">Animal</span>()&#123;</span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;Animal构造函数&quot;</span>&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">speak</span><span class="params">()</span> </span>= <span class="number">0</span>;</span><br><span class="line"><span class="comment">//	virtual ~Animal()&#123;</span></span><br><span class="line"><span class="comment">//		cout&lt;&lt;&quot;Animal析构函数&quot;&lt;&lt;endl;</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line">	<span class="keyword">virtual</span> ~<span class="built_in">Animal</span>() = <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br><span class="line">Animal::~<span class="built_in">Animal</span>()&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;Animal析构函数&quot;</span>&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span> :</span> <span class="keyword">public</span> Animal&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="built_in">Cat</span>(string name)&#123;</span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;Cat构造函数&quot;</span>&lt;&lt;endl;</span><br><span class="line">		<span class="keyword">this</span>-&gt;name = <span class="keyword">new</span> <span class="built_in">string</span>(name);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">speak</span><span class="params">()</span></span>&#123;</span><br><span class="line">		cout&lt;&lt;*name&lt;&lt;<span class="string">&quot; is speaking&quot;</span>&lt;&lt;endl;</span><br><span class="line">	&#125;</span><br><span class="line">	~<span class="built_in">Cat</span>()&#123;</span><br><span class="line">		cout&lt;&lt;<span class="string">&quot;Cat析构函数&quot;</span>&lt;&lt;endl;</span><br><span class="line">		<span class="keyword">if</span>(name != <span class="literal">NULL</span>)&#123;</span><br><span class="line">			<span class="keyword">delete</span> name;</span><br><span class="line">			name = <span class="literal">NULL</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	string* name;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;  </span><br><span class="line">	Animal* cat = <span class="keyword">new</span> <span class="built_in">Cat</span>(<span class="string">&quot;Tom&quot;</span>);</span><br><span class="line">	cat-&gt;<span class="built_in">speak</span>();</span><br><span class="line">	<span class="keyword">delete</span> cat;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>纯虚析构也需要实现，在类外</p>
-<p>总结：</p>
+<p>最佳和最坏适应都需要按照空闲分区容量排序，所以开销更大</p>
+<h2 id="3-4-非连续分配管理方式——分页"><a href="#3-4-非连续分配管理方式——分页" class="headerlink" title="3.4 非连续分配管理方式——分页"></a>3.4 非连续分配管理方式——分页</h2><p>基本分页存储管理：把内存分为一个个相等的小分区（页框、页帧、内存块、物理块），再按照分区大小把进程拆分成一个个小部分称为页、页面，可以离散地装入内存</p>
+<p>页框和页都是从0开始</p>
+<p>由于是离散装入内存的所以实现地址转换：</p>
 <ol>
-<li>虚析构或纯虚析构就是用来解决通过父类指针释放子类对象</li>
-<li>如果子类没有堆区数据，可以不屑虚析构或纯虚析构</li>
-<li>拥有纯虚析构的类也属于抽象类</li>
+<li>算出逻辑地址对应的页号</li>
+<li>知道页号对应页面再内存中的起始地址</li>
+<li>算出逻辑地址再页面内的“偏移量”</li>
+<li>物理地址 = 页面地址 + 页内偏移量</li>
 </ol>
-<h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h2><h3 id="函数模板"><a href="#函数模板" class="headerlink" title="函数模板"></a>函数模板</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line">函数声明或定义</span><br></pre></td></tr></table></figure>
-
-<p>typename可以用class代替</p>
-<p>使用函数模板的时候有两种方式：自动类型推导、显示指定类型</p>
-<p><code>swap(a, b); swap&lt;int&gt;(a, b)</code></p>
-<h3 id="普通函数和函数模板区别"><a href="#普通函数和函数模板区别" class="headerlink" title="普通函数和函数模板区别"></a>普通函数和函数模板区别</h3><ol>
-<li>普通函数调用可以发生隐式类型转换</li>
-<li>函数模板 用自动类型推导 不可以发生隐式类型转换</li>
-<li>函数模板 用显示指定类型 可以发生隐式类型转换</li>
-</ol>
-<p>隐式类型转换就是比如把char转换成int</p>
-<h3 id="普通函数和函数模板的调用规则"><a href="#普通函数和函数模板的调用规则" class="headerlink" title="普通函数和函数模板的调用规则"></a>普通函数和函数模板的调用规则</h3><ol>
-<li>如果函数模板和普通函数都可以实现，优先调用普通函数</li>
-<li>可以通过空模板参数列表来强制调用函数模板<code>func&lt;&gt;(a, b)</code></li>
-<li>函数模板也可以发生重载</li>
-<li>如果函数模板可以产生更好的匹配，优先调用函数模板</li>
-</ol>
-<h3 id="类模板"><a href="#类模板" class="headerlink" title="类模板"></a>类模板</h3><p>类模板与函数模板的区别</p>
-<ol>
-<li>类模板没有自动类型推导</li>
-<li>类模板在模板参数列表中可以有默认参数<code>template&lt;class NameType, class AgeType = int&gt;</code></li>
-</ol>
-<p>类模板中成员函数的创建时机</p>
-<ol>
-<li>普通类中的成员函数一开始就可以创建</li>
-<li>类模板中的成员函数在调用时才创建</li>
-</ol>
-<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><p><code>append(const string&amp; s, int pos, int n)</code>s中pos位置开始的n个字符</p>
-<p><code>s.replace(1, 3, &quot;1111&quot;)</code> 1号位置开始3个字符替换成1111</p>
-<p><code>s.compare(str)==0</code> 看是否相等</p>
-<p><code>s.erase(1, 3)</code>在1的位置删3个</p>
-<p><code>s.substr(1, 3)</code>从1的位置开始截3个</p>
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>无法解析的外部命令，是在链接的阶段出现问题</p>
-<h3 id="常用算法"><a href="#常用算法" class="headerlink" title="常用算法"></a>常用算法</h3><h4 id="find"><a href="#find" class="headerlink" title="find"></a>find</h4><p>查找指定元素，找到返回指定元素的迭代器，找不到返回结束迭代器end()</p>
-<p><code>find(v.begin(), v.end(), 3)</code></p>
-<h4 id="binary-search"><a href="#binary-search" class="headerlink" title="binary_search"></a>binary_search</h4><p>查找指定元素是否存在，返回bool，必须是有序的</p>
-<p><code>binary_search(v.begin(), v.end(), 3)</code></p>
-<h4 id="count"><a href="#count" class="headerlink" title="count"></a>count</h4><p>统计元素个数，跟前面一样</p>
-<h4 id="random-shuffle"><a href="#random-shuffle" class="headerlink" title="random_shuffle"></a>random_shuffle</h4><p>洗牌，就需要传入其实和结束迭代器</p>
-<h4 id="merge"><a href="#merge" class="headerlink" title="merge"></a>merge</h4><p>两个容器元素合并，并存储到另一个容器中</p>
-<p>注意两个容器必须是有序的，合并之后也是有序的</p>
-<p><code>merge(v1.begin(), v1.end(), v2.begin(), v2.end(), target.begin())</code></p>
-<p>需要用resize给目标容器分配内存</p>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208042029973.png"></p>
+<p>页表寄存器：存放页表其实起始地址和页表长度</p>
+<h3 id="具有快表的地址变换机构"><a href="#具有快表的地址变换机构" class="headerlink" title="具有快表的地址变换机构"></a>具有快表的地址变换机构</h3><p>局部性原理：</p>
+<p>时间局部性：如果执行了程序中某条指令，不久后这条指令可能再次执行，如果某个数据被访问过，不久之后该数据可能被再次访问（循环）</p>
+<p>空间局部性：一旦程序访问了某个存储单元，不久之后其附近存储单元也有可能被访问（连续存放）</p>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208050934352.png"></p>
+<h3 id="二级页表"><a href="#二级页表" class="headerlink" title="二级页表"></a>二级页表</h3><p>有的进程页表过大，页表都连续存放，会占用很大一块内存连续空间，这有悖于我们离散存储。</p>
+<p>进程在一段时间内只需要访问某几个页面，没必要让整个页表都常驻内存</p>
+<h2 id="3-5-基本分段存储管理方式"><a href="#3-5-基本分段存储管理方式" class="headerlink" title="3.5 基本分段存储管理方式"></a>3.5 基本分段存储管理方式</h2><p>进程的地址空间，按照程序自身逻辑关系划分为多个若干段，每段从0开始编制</p>
+<p>内存分配：以段为单位进行分配，每个段在内存里占连续空间</p>
+<h2 id="3-6-虚拟内存"><a href="#3-6-虚拟内存" class="headerlink" title="3.6 虚拟内存"></a>3.6 虚拟内存</h2><p>传统存储管理缺点：</p>
+<p>一次性：作业必须一次性全部装入内存后开始运行，导致大作业无法运行，大量作业无要求运行时，只有少量作业能运行，导致躲到程序并发度下降</p>
+<p>驻留性：一旦作业被装入内存，就会一直驻留在内存中</p>
+<p>局部性原理：</p>
+<p>时间局部性：如果执行了程序中某条指令，不久后这条指令可能再次执行，如果某个数据被访问过，不久之后该数据可能被再次访问（循环）</p>
+<p>空间局部性：一旦程序访问了某个存储单元，不久之后其附近存储单元也有可能被访问（连续存放）</p>
+<p>虚拟内存实际容量 = min(内存和外存容量之和，CPU寻址范围)</p>
+<p>虚拟内存主要特征：</p>
+<ul>
+<li>多次行：无需再作业运行时一次性全部装入内存</li>
+<li>对换性：作业无需一直常驻内存，允许运行过程中换入换出</li>
+<li>虚拟性：从逻辑上扩充了内存的容量</li>
+</ul>
+<h2 id="3-6-请求分页管理方式"><a href="#3-6-请求分页管理方式" class="headerlink" title="3.6 请求分页管理方式"></a>3.6 请求分页管理方式</h2><p>如果发现需要的页面没有在内存中会产生缺页中断，缺页中断属于内中断</p>
+<p>一条指令在执行期间，可能产生多次缺页中断</p>
+<h3 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h3><p>最佳置换算法（OPT）：淘汰的页面是以后用不使用的页面，或者长时间内不再访问的页面，这在现实生活中是无法实现的</p>
+<p>先进先出置换算法（FIFO）：淘汰的是最早进入内存的，会产生Belady异常（为进程分配物理块数增大时，缺页次数不减反增）</p>
+<p>最近最久未使用置换算法（LRU）：淘汰的是最近最久未使用的，页表里有一个访问字段，就是记录使用了多少次</p>
+<p>时钟置换算法（CLOCK）：为每个页面设置一个访问位，当某页被访问时，置为1。当需要淘汰一个页面时，循环检查访问位，如果为0则换出。检查完之后，把访问位置为0，所以淘汰一个页面最多经过两轮扫描</p>
+<p>改进的时钟置换算法：除了访问位，增加一个修改位</p>
+<h3 id="页面分配策略"><a href="#页面分配策略" class="headerlink" title="页面分配策略"></a>页面分配策略</h3><p>驻留集：请求分页存储管理中给进程分配的物理块的集合。太大导致并发度下降，太小导致频繁缺页</p>
+<p>固定分配：OS为每个进程分配固定的物理块</p>
+<p>可变分配：驻留集大小可变</p>
+<p>局部置换：发生缺页时只能选择自己的物理块进行置换</p>
+<p>全局置换：可以将OS保留的空闲物理块分配给缺页进程，也可以将其它进程的物理块分配给缺页进程</p>
+<p>排列组合有三种：</p>
+<p>固定分配局部置换：物理块刚开始就确定，整个运行期间不能变</p>
+<p>可变分配全局置换：只要缺页，就会分配物理块</p>
+<p>可变分配局部置换：根据缺页频率动态调整物理块</p>
+<p>何时调入页面：预调页策略、请求调页策略</p>
+<p>抖动现象：刚刚换出外存的页面马上又要换入内存，刚刚换入的页面马上又要换出外存。原因是进程频繁访问的页面数目高于分配的物理块</p>
+<p>工作集：某段时间间隔内，进程实际访问页面的集合</p>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208051045845.png"></p>
+<p>驻留集大小不能小于工作集大小，否则进程运行过程将频繁缺页</p>
+<h1 id="4-文件管理"><a href="#4-文件管理" class="headerlink" title="4 文件管理"></a>4 文件管理</h1><h2 id="4-1-简介"><a href="#4-1-简介" class="headerlink" title="4.1 简介"></a>4.1 简介</h2><p>文件的属性：文件名、标识符（OS用于区分文件）、类型、位置、大小、创建时间、上次修改的时间、文件所有者、保护信息</p>
+<p>OS向上提供的功能：创建文件(create系统调用)、删除文件(delete)、读文件(read)、写文件(write)、打开文件(open)、关闭文件(close)</p>
+<p>外存被分为了一个个的磁盘块</p>
+<h2 id="4-2-文件目录"><a href="#4-2-文件目录" class="headerlink" title="4.2 文件目录"></a>4.2 文件目录</h2><p>一个文件对应一个FCB，一个FCB就是一个目录项，多个FCB组成目录文件</p>
+<h3 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h3><p>单级目录结构：一个系统只有一张目录表，不允许文件重名</p>
+<p>两级目录结构：先是用户目录，再是用户下的文件目录，不能对文件进行分类</p>
+<p>多级（树形）目录结构：不方便文件共享</p>
+<p>无环图目录结构：为共享文件设置计数器，当计数器为0时才真正删除</p>
+<h3 id="索引节点"><a href="#索引节点" class="headerlink" title="索引节点"></a>索引节点</h3><p>文件的FCB在查找的时候有很多冗余信息，把除了文件名以外的所有信息都放入索引节点去，目录中只包含文件名、索引节点的指针</p>
+<p>可以减少检索文件时磁盘的IO操作</p>
+<h2 id="4-3-文件的物理结构"><a href="#4-3-文件的物理结构" class="headerlink" title="4.3 文件的物理结构"></a>4.3 文件的物理结构</h2><h3 id="连续分配"><a href="#连续分配" class="headerlink" title="连续分配"></a>连续分配</h3><p>要求每个文件在磁盘上占有一组连续的块</p>
+<p>支持顺序访问和随机访问，连续分配在顺序访问时速度最快</p>
+<p>不方便文件扩展、存储空间利用率低，产生磁盘碎片</p>
+<h3 id="隐式链接"><a href="#隐式链接" class="headerlink" title="隐式链接"></a>隐式链接</h3><p>除文件最后一个盘块外，每个盘块都有存放下一个盘块的指针</p>
+<p>只支持顺序访问，不支持随机访问</p>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208071042251.png"></p>
+<h3 id="显示链接"><a href="#显示链接" class="headerlink" title="显示链接"></a>显示链接</h3><p>把用于链接文件各物理块的指针显式地存放在一张表中，即文件分配表（FAT）一个磁盘指挥创建一张文件分配表，开机时读入内存，并常驻内存。</p>
+<p>很方便文件扩展、不会有碎片问题、支持随机访问、地址转换不需要访问磁盘，文件访问效率高</p>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208071039349.png"></p>
+<h3 id="索引分配"><a href="#索引分配" class="headerlink" title="索引分配"></a>索引分配</h3><p>每个文件都创建一个索引表，专门有一个磁盘块来存放称为索引块，记录逻辑块号对应的物理块号。文件目录中记录每个文件的索引块。先找到索引块，索引块的内容就是逻辑块号对应的物理块号</p>
+<p><img src="https://picgo-1312301849.cos.ap-nanjing.myqcloud.com/img/202208071047641.png"></p>
+<p>如果索引表太大，一个索引块装不下</p>
+<ul>
+<li>链接方案：指针链接</li>
+<li>多层索引：类似于两级页表</li>
+<li>混合索引：既有直接索引也有多层索引</li>
+</ul>
+<hr>
+<p>磁盘缓存是内存的一部分</p>
+<p>算数右移&gt;&gt; 左边补符号位，逻辑右移&gt;&gt; 左边补0</p>
+<p>可逆压缩：能还原到压缩前的状态，GIF</p>
+<p>非可逆压缩：无法还原到压缩前的状态，JPEG</p>
+<h2 id="什么是操作系统？"><a href="#什么是操作系统？" class="headerlink" title="什么是操作系统？"></a>什么是操作系统？</h2><p>操作系统是管理硬件和软件的一种应用程序</p>
+<p>操作系统是运行在计算机上最重要的一个软件，它管理计算机的资源和进程以及所有的软件和硬件。它为计算机软硬件提供了一层中间层，使软硬件分离，让我们无需关注硬件实现，关注点放在软件上</p>
+<h2 id="操作系统主要功能？"><a href="#操作系统主要功能？" class="headerlink" title="操作系统主要功能？"></a>操作系统主要功能？</h2><ul>
+<li> 进程管理：进程管理的主要作用是任务调度。单核处理机下，操作系统会为每个进程分配一个任务，进程管理十分简单；多核处理器下，除了要分配任务外，还要解决处理器调度、分配和回收等</li>
+<li> 内存管理：负责管理内存的分配、回收，进程需要分配内存，进程完成时回收内存，协调内存资源，通过合理的置换算法进行页面换入换出</li>
+<li> 设备管理</li>
+<li> 文件管理</li>
+<li> 提供用户接口</li>
+</ul>
+<h2 id="操作系统的主要目的？"><a href="#操作系统的主要目的？" class="headerlink" title="操作系统的主要目的？"></a>操作系统的主要目的？</h2><p>操作系统是一种软件，目的有：</p>
+<ul>
+<li>管理计算机资源，CPU、内存、磁盘、打印机等</li>
+<li>提供图形界面</li>
+<li>为其他软件提供服务，操作系统与软件进行交互，以便为其分配所需要的资源</li>
+</ul>
+<h2 id="为什么Linux系统的应用程序不能直接在Windows上运行？"><a href="#为什么Linux系统的应用程序不能直接在Windows上运行？" class="headerlink" title="为什么Linux系统的应用程序不能直接在Windows上运行？"></a>为什么Linux系统的应用程序不能直接在Windows上运行？</h2><p>一是因为系统格式不同，格式就是协议。Linux下可执行文件格式是elf，Windows下可执行程序是PE格式，它是一种可移植的可执行文件</p>
+<p>还有一点是因为系统API不同</p>
+<h2 id="什么是用户态和内核态？"><a href="#什么是用户态和内核态？" class="headerlink" title="什么是用户态和内核态？"></a>什么是用户态和内核态？</h2><p>是操作系统的两种运行状态</p>
+<ul>
+<li>内核态：处于内核态的CPU可以访问任意的数据，包括外围设备，硬盘、网卡等，处于内核态的CPU可以从一个程序切换到另一个程序而不会发生抢占情况，一般处于特权级0 的状态称为内核态</li>
+<li>用户态：处于用户态的CPU只能受限的访问内存，并且不能访问外围设备，用户态的CPU不允许独占</li>
+</ul>
+<p>计算机中有一些比较危险的操作，必须分配不同的权限，比如设置时钟、内存清理，这些都需要在内核态完成</p>
+<h2 id="用户态和内核态如何切换？"><a href="#用户态和内核态如何切换？" class="headerlink" title="用户态和内核态如何切换？"></a>用户态和内核态如何切换？</h2><p>所有用户进程都运行在用户态，用户态到内核态需要系统调用，能够执行系统调用的是操作系统</p>
+<h2 id="什么是实时系统？"><a href="#什么是实时系统？" class="headerlink" title="什么是实时系统？"></a>什么是实时系统？</h2><p>实时操作系统对时间做出了严格要求，实时操作系统分为：软实时和硬实时</p>
+<p>是否在时刻内必须完成以及是否造成严重损害</p>
+<h2 id="什么是进程和进程表？"><a href="#什么是进程和进程表？" class="headerlink" title="什么是进程和进程表？"></a>什么是进程和进程表？</h2><p>进程就是正在执行程序的实例，操作系统负责管理所有正在运行的进程，会为每个进程分配特定的时间来占用CPU，还会为每个进程分配特定的资源</p>
+<p>操作系统为了跟踪每个进程的活动状态，维护了一个进程表，在进程表的内部，列出了每个进程的状态和每个进程使用的资源</p>
+<h2 id="线程和进程"><a href="#线程和进程" class="headerlink" title="线程和进程"></a>线程和进程</h2><p>浏览器是一个进程，里面的tab页可以看作一个个线程</p>
+<p>线程不像进程那样具有很强的独立性，线程之间会共享数据</p>
+<p>创建线程的开销比进程小很多，因为创建线程仅需要堆栈指针和程序计数器就可以，而创建进程需要操作系统分配新的地址空间、数据资源等</p>
+<h2 id="什么是上下文切换？"><a href="#什么是上下文切换？" class="headerlink" title="什么是上下文切换？"></a>什么是上下文切换？</h2><p>对于单核CPU而言，在某一时刻只能执行一条CPU指令，上下文切换是一种将CPU资源从一个进程分配给另一个进程的机制。</p>
+<p>从用户角度看，计算机能并行运行多个程序，恰恰是操作系统通过快速的上下文切换造成的。在切换过程中，操作系统需要先存储当前进程的状态（内存空间的指针、下一条的指令等等）再读入下一个进程的状态，然后执行该进程</p>
 
       
 
@@ -492,7 +550,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">操作系统 OS os</a>
         		</li>
       		
 		</ul>
@@ -511,18 +569,18 @@
   
 <nav id="article-nav">
   
-    <a href="/1614196964.github.io/2022/12/03/Commons-CLI/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/1614196964.github.io/2022/12/07/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Commons CLI
+          正则表达式
         
       </div>
     </a>
   
   
-    <a href="/1614196964.github.io/2022/06/15/%E8%AF%BE%E8%AE%BE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">SpringBoot中MyBatis，MyBatisPlus操作</div>
+    <a href="/1614196964.github.io/2022/12/04/Git%E6%95%99%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git教程</div>
       <i class="icon-circle-right"></i>
     </a>
   
